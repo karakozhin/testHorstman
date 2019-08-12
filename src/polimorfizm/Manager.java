@@ -30,6 +30,7 @@ public class Manager extends Employee {
     }
 
 
+
     public int hashCode() {
         return super.hashCode() + 17 * new Double(bonus).hashCode();
     }
