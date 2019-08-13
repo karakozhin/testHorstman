@@ -3,6 +3,8 @@ import abstarctClass.Student;
 import polimorfizm.Employee;
 import polimorfizm.Manager;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -118,6 +120,7 @@ public class Main {
         for (Person p : people)
             System.out.println(p.getName() + ", " + p.getDescription());*/
 
+        /*//*hashCode*toString*equals
         Employee alice1 = new Employee("Alice Adams", 75000, 1987, 12, 15);
         Employee alice2 = alice1;
         Employee alice3 = new Employee("Alice Adams", 75000, 1987, 12, 15);
@@ -138,7 +141,16 @@ public class Main {
         System.out.println("alice1.hashCode(): " + alice1.hashCode());
         System.out.println("alice3.hashCode(): " + alice3.hashCode());
         System.out.println("bob.hashCode(): " + bob.hashCode());
-        System.out.println("carl.hashCode(): " + carl.hashCode());
+        System.out.println("carl.hashCode(): " + carl.hashCode());*/
 
+        /*//*ArrayList
+        ArrayList<Employee> staff = new ArrayList<>();
+
+        staff.add(new Employee("Carl Cracker", 75000, 1987, 12, 15));
+        staff.add(new Employee("Harry Hacker", 50000, 1989, 10, 1));
+        staff.add(new Employee("Tony Tester", 40000, 1990, 3, 15));
+
+        for(Employee e : staff)
+            System.out.println("name=" + e.getName() + ", salary=" + e.getSalary() + ", hireDay=" + e.getHireDay());*/
     }
 }
