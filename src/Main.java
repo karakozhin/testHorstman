@@ -1,13 +1,16 @@
 import abstarctClass.Person;
 import abstarctClass.Student;
+import com.sun.glass.ui.Size;
 import polimorfizm.Employee;
 import polimorfizm.Manager;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
         /*Scanner keyboard = new Scanner(System.in);
         System.out.println("Вес? ");
         double weightInEarth = keyboard.nextInt();
@@ -152,5 +155,31 @@ public class Main {
 
         for(Employee e : staff)
             System.out.println("name=" + e.getName() + ", salary=" + e.getSalary() + ", hireDay=" + e.getHireDay());*/
+
+       /* //enums
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a size: (SMALL, MEDIUM, LARGE, EXTRA_LARGE) ");
+        String input = in.next().toUpperCase();
+        Size size = Enum.valueOf(Size.class, input);
+        System.out.println("size=" + size);
+        System.out.println("abbreviation=" + size.getAbbreviation());
+        if(size == Size.EXTRA_LARGE)
+            System.out.println("Good job--you paid attention to the _.");*/
+
     }
+  /*  //enums
+    enum Size{
+
+        SMALL("S"), MEDIUM("M"), LARGE("L"), EXTRA_LARGE("XL");
+
+        Size(String abbreviation){
+            this.abbreviation = abbreviation;
+        }
+
+        public String getAbbreviation(){
+            return abbreviation;
+        }
+
+        private String abbreviation;
+    }*/
 }
